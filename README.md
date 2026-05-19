@@ -2,7 +2,7 @@
 
 The Greddy Shop project is a modern e-commerce web application developed using HTML, CSS, and JavaScript, providing a user-friendly shopping experience with product browsing, cart management, search functionality, filters, and a mock checkout system.
 
-[Live Demo]()
+[Live Demo](https://khushalraut706.github.io/Greedy-Shope-E-com-web/)
 
 ## Features
 Product Showcase: Browse multiple products with images, descriptions, and pricing.
