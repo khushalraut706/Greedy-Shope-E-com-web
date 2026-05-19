@@ -4,7 +4,7 @@ The Greddy Shop project is a modern e-commerce web application developed using H
 
 [Live Demo](https://khushalraut706.github.io/Greedy-Shope-E-com-web/)
 
-## Features
+## Features:
 Product Showcase: Browse multiple products with images, descriptions, and pricing.
 Search Functionality: Search products instantly using keywords.
 Category Filters: Filter products by categories such as Audio, Accessories, Wearables, and Displays.
