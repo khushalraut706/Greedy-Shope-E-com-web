@@ -1,0 +1,93 @@
+<!doctype html>
+<div lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MiniShop — Single File E‑Commerce Demo</title>
+  <meta name="description" content="MiniShop — compact single-file e-commerce demo (HTML/CSS/JS)." />
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="app" role="appli cation">
+    <header>
+       
+      <div class="logo">
+        <div class="mark">
+    <img src="GREEDY4.png" alt="">
+        </div>
+       <div>
+          <h1>Greddy Shope</h1>
+          <p class="lead">A compact single-file e-commerce demo — add to cart, search, filter, checkout (mock).</p>
+        </div>
+      </div>
+
+      <div class="topbar">
+        <div class="search" aria-label="product search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle></svg>
+          <input class="search-in" placeholder="Search products, e.g. headphones" id="searchInput">
+        </div>
+        <div class="pill" id="cartCount">Cart: 0 items</div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="controls">
+          <div id="categories" aria-hidden>
+            <!-- chips will be inserted here -->
+          </div>
+
+          <select id="sort" class="chip" aria-label="sort products">
+            <option value="popular">Sort: Recommended</option>
+            <option value="price-asc">Price: Low → High</option>
+            <option value="price-desc">Price: High → Low</option>
+            <option value="alpha">Name: A → Z</option>
+          </select>
+
+          <div style="margin-left:auto" class="muted">Demo data — no real payments</div>
+        </div>
+
+        <div id="grid" class="grid" aria-live="polite"></div>
+
+      </section>
+
+      <aside class="sidebar" aria-label="shopping cart">
+        <h3 style="margin:0 0 8px 0">Your Cart</h3>
+        <div class="cart-list" id="cartList">
+          <div class="empty" id="cartEmpty">Your cart is empty — add something!</div>
+        </div>
+
+        <div class="total-row">
+          <div class="muted">Subtotal</div>
+          <div id="subtotal" class="price">₹0</div>
+        </div>
+
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <button class="btn" id="checkoutBtn">Checkout</button>
+          <button class="btn ghost" id="clearCartBtn">Clear</button>
+        </div>
+
+        <hr style="opacity:0.04;margin:12px 0">
+        <div class="muted" style="font-size:13px">Tip: Cart persists in your browser via localStorage.</div>
+      </aside>
+    </main>
+
+    <footer>
+      Built as a single-file demo. Feel free to copy, expand, or integrate into a backend.
+    </footer>
+  </div>
+  </body>
+
+
+  <div class="modal-back" id="modalBack" role="dialog" aria-modal="true">
+    <div class="modal" id="modal">
+      <!-- content injected by JS -->
+    </div>
+  </div>
+</div>
+
+<script src="./app.js"></script>
+  
+</body>
+</html>
